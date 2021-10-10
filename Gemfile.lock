@@ -77,6 +77,8 @@ GEM
     hashie (3.6.0)
     i18n (1.6.0)
       concurrent-ruby (~> 1.0)
+    jquery-middleman (3.1.2)
+      thor (>= 0.14, < 2.0)
     kramdown (2.3.1)
       rexml
     listen (3.0.8)
@@ -210,6 +212,7 @@ DEPENDENCIES
   capybara
   cucumber
   font-awesome-sass (~> 5.13.0)
+  jquery-middleman
   middleman
   middleman-autoprefixer
   middleman-gh-pages
@@ -220,4 +223,4 @@ DEPENDENCIES
   selenium-webdriver
 
 BUNDLED WITH
-   2.2.25
+   2.2.28

@@ -30,5 +30,8 @@ const navbarItems = document.querySelectorAll(".navbar-tabs-item");
 
 
 navbarItems.forEach(el => el.addEventListener('click', event => {
-	event.target.classList.toggle('active');
+	if(document.querySelector('.active')) {
+		document.querySelector('.active').classList.remove('active');
+	}
+	event.target.classList.add('active');
 }));
