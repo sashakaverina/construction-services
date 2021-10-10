@@ -26,3 +26,9 @@ counters.forEach(counter => {
 	updateCount();
 });
 
+const navbarItems = document.querySelectorAll(".navbar-tabs-item");
+
+
+navbarItems.forEach(el => el.addEventListener('click', event => {
+	event.target.classList.toggle('active');
+}));

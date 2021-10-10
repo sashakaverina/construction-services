@@ -24,8 +24,23 @@
   align-items: center;
   width: 600px;
   list-style: none;
+}
 
-  .active {
-    color: #edcd1e;
+.navbar-tabs-item {
+  transition: all 0.2s;
+  transition-delay: 0s;
+  color: white;
+
+  :hover {
+    text-decoration: none;
   }
+}
+
+.active {
+  color: #edcd1e;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #edcd1e;
 }
