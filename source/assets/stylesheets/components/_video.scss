@@ -1,35 +1,28 @@
-video#video {
-  position: absolute;
-  top: 60px;
+video {
+  object-fit: cover;
   width: 100vw;
+  height: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 
-.hero {
+// .hero {
+//   height: 100vh;
+//   padding: 230px 0;
+
+//   .row {
+//     padding: 10px;
+//     display: block;
+//   }
+
+.viewport-header {
+  position: relative;
   height: 100vh;
-  padding: 230px 0;
-
-  .row {
-    padding: 10px;
-    display: block;
-  }
-
-  p {
-    position: absolute;
-    top: 13rem;
-    padding: 0 256px;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
-
-    color: white;
-    font-size: 55px;
-    text-align: center;
-
-    .fa-chevron-down {
-      position: absolute;
-      font-size: 50px;
-    }
-  }
-}
-
-.hero {
-  scroll-behavior: smooth;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 55px;
 }
