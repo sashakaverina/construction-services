@@ -1,0 +1,27 @@
+.about-container {
+  background-color: #f7f7f7;
+  color: black;
+
+  img {
+    max-width: 700px;
+  }
+}
+
+.about-content {
+  width: 500px;
+}
+
+.about-header p {
+  color: black;
+  font-size: 55px;
+  text-align: left;
+}
+
+.about-header p:after {
+  content: "";
+  display: block;
+  position: relative;
+  width: 20%;
+  border: 5px solid #edcd1e;
+  text-align: left;
+}
