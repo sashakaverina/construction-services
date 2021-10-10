@@ -15,6 +15,8 @@
     <!-- Comment this out when meta tags configured -->
 
     <%= favicon_tag 'favicon.ico' %>
+
+
     <%= stylesheet_link_tag "app" %>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
   </head>
@@ -36,6 +38,7 @@
       </div>
   </div>
     <%= yield %>
-    <%= javascript_include_tag "bundle" %>
+    <%= javascript_include_tag "index" %>
   </body>
+
 </html>
