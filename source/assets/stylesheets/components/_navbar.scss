@@ -5,12 +5,16 @@
   top: 0;
   left: 0;
   color: white;
-  padding-right: 16px;
-  padding-left: 16px;
+  padding-right: 18px;
+  padding-left: 18px;
 
   height: 64px;
   width: 100%;
   transition: all 0.25s;
+}
+
+.navbar-logo {
+  display: flex;
 }
 
 .fa-home {
@@ -53,6 +57,23 @@ a:hover {
 
 // Smallest device
 @media (min-width: 100px) and (max-width: 575px) {
+  .navbar {
+    height: 400px;
+    position: relative;
+    display: block;
+  }
+
+  .navbar-logo {
+    display: block;
+    font-size: 30px;
+    text-align: center;
+    margin: 50px;
+  }
+
+  .fa-home {
+    font-size: 50px;
+  }
+
   .navbar-tabs {
     display: none;
   }
@@ -61,7 +82,8 @@ a:hover {
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) and (max-width: 767px) {
   .navbar-tabs {
-    display: none;
+    font-size: 11px;
+    width: 60%;
   }
 }
 

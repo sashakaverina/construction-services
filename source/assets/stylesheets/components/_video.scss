@@ -26,3 +26,28 @@ video {
   color: white;
   font-size: 55px;
 }
+
+// Smallest device
+@media (min-width: 100px) and (max-width: 575px) {
+  .viewport-header {
+    display: none;
+  }
+  .video {
+    display: none;
+  }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767px) {
+  .viewport-header {
+    font-size: 30px;
+    height: 50vh;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .viewport-header {
+    font-size: 30px;
+    height: 50vh;
+  }
+}
