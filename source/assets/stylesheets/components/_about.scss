@@ -8,8 +8,8 @@
 }
 
 .about-content {
-  width: 500px;
-  margin-right: 50px;
+  width: 100%;
+  text-align: justify;
 }
 
 .about-header p {
@@ -25,4 +25,62 @@
   width: 20%;
   border: 5px solid #edcd1e;
   text-align: left;
+}
+
+.about-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 40px;
+}
+
+// Smallest device
+@media (min-width: 100px) and (max-width: 575px) {
+  .about-cards {
+    grid-template-columns: 1fr;
+    img {
+      display: none;
+    }
+  }
+
+  .about-header p {
+    font-size: 30px;
+  }
+  .about-description {
+    font-size: 13px;
+  }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767px) {
+  .about-cards {
+    grid-template-columns: 1fr;
+
+    img {
+      display: none;
+    }
+  }
+
+  .about-header p {
+    font-size: 30px;
+  }
+  .about-description {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .about-cards {
+    grid-template-columns: 1fr 1fr;
+
+    img {
+      max-width: 400px;
+    }
+  }
+  .about-header p {
+    font-size: 40px;
+  }
+
+  .about-description {
+    font-size: 15px;
+  }
 }
