@@ -1,3 +1,5 @@
+import { tns } from 'tiny-slider/dist/tiny-slider';
+
 const counters = document.querySelectorAll('.counter');
 const speed = 12; // The lower the slower
 
@@ -52,3 +54,21 @@ navbarItems.forEach(el => el.addEventListener('click', event => {
 	}
 	event.target.classList.add('active');
 }));
+
+let slider = tns({
+	container: '.my-slider',
+	items: 1,
+	slideBy: 'page',
+	autoplay: true,
+	responsive: {
+	  640: {
+		items: 2
+	  },
+	  1000: {
+		items: 3
+	  },
+	  1400: {
+		items: 4
+	  }
+	}
+  });

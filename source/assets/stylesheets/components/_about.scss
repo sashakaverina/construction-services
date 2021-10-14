@@ -54,6 +54,7 @@
 @media (min-width: 576px) and (max-width: 767px) {
   .about-cards {
     grid-template-columns: 1fr;
+    padding: 20px;
 
     img {
       display: none;
