@@ -1,6 +1,3 @@
-import { tns } from "./node_modules/tiny-slider/src/tiny-slider";
-
-
 const counters = document.querySelectorAll('.counter');
 const speed = 12; // The lower the slower
 
