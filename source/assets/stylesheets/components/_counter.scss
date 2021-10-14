@@ -14,3 +14,37 @@
   font-size: 2.5rem;
   font-weight: 800;
 }
+
+@media (min-width: 100px) and (max-width: 575px) {
+  .counter-container p {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .counter p {
+    font-size: 19px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .counter p {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .about-cards {
+    grid-template-columns: 1fr 1fr;
+
+    img {
+      max-width: 400px;
+    }
+  }
+  .about-header p {
+    font-size: 40px;
+  }
+
+  .about-description {
+    font-size: 15px;
+  }
+}
