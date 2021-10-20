@@ -58,18 +58,26 @@ navbarItems.forEach(el => el.addEventListener('click', event => {
 let slider = tns({
 	container: '.my-slider',
 	items: 1,
-	slideBy: 'page',
-	autoplay: true,
+    mouseDrag: true,
+    slideBy: "page",
+    swipeAngle: false,
+    speed: 400,
+	navPosition: "bottom",
+	controls: false,
 	responsive: {
+		320: {
+			items: 1,
+		  },
+	
 	  640: {
 		items: 2,
+		gutter: 16,
 	  },
 	  1000: {
 		items: 3,
+		gutter: 16,
 	  },
-	  1400: {
-		items: 4
-	  }
+	
 	}
   });
 
