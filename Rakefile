@@ -1,4 +1,5 @@
 require 'rainbow'
+require 'middleman-gh-pages'
 
 linters = [
   {

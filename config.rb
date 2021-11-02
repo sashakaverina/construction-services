@@ -42,5 +42,5 @@ configure :build do
   activate :relative_assets
 end
 
-activate :meta_tags
+activate :metaman, host: 'https://domain.com'
 
