@@ -42,5 +42,6 @@ configure :build do
   activate :relative_assets
 end
 
+activate :metaman, host: 'https://618135bed997970007df068f--fervent-mahavira-9676b7.netlify.app/'
 
 
